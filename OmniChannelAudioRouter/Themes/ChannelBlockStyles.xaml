@@ -1,0 +1,53 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <!-- Channel block card style -->
+    <Style x:Key="ChannelCardStyle" TargetType="md:Card">
+        <Setter Property="Margin" Value="8"/>
+        <Setter Property="Padding" Value="16"/>
+        <Setter Property="md:ElevationAssist.Elevation" Value="Dp4"/>
+    </Style>
+
+    <!-- Channel title text style -->
+    <Style x:Key="ChannelTitleStyle" TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="0,0,0,20"/>
+    </Style>
+
+    <!-- Outlined combo box with bottom margin -->
+    <Style x:Key="ChannelComboBoxStyle" TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignOutlinedComboBox}">
+        <Setter Property="Margin" Value="0,0,0,20"/>
+    </Style>
+
+    <!-- Outlined text box with bottom margin -->
+    <Style x:Key="ChannelTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+        <Setter Property="Margin" Value="0,0,0,20"/>
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Volume label style -->
+    <Style x:Key="VolumeLabelStyle" TargetType="TextBlock">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="0,0,0,5"/>
+    </Style>
+
+    <!-- Volume percentage display style -->
+    <Style x:Key="VolumePercentStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="MinWidth" Value="40"/>
+    </Style>
+
+    <!-- Volume slider style -->
+    <Style x:Key="VolumeSliderStyle" TargetType="Slider">
+        <Setter Property="Minimum" Value="0"/>
+        <Setter Property="Maximum" Value="100"/>
+        <Setter Property="IsSnapToTickEnabled" Value="True"/>
+        <Setter Property="TickFrequency" Value="1"/>
+        <Setter Property="Orientation" Value="Horizontal"/>
+    </Style>
+
+</ResourceDictionary>
